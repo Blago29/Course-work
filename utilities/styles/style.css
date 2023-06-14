@@ -1,0 +1,138 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+#mainPicTop {
+  border-radius: 0;
+  height: auto;
+  position: relative;
+  background-image: url('../../images/site\ assets/fishing_cropped02.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.container{
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  margin-top: auto;
+}
+
+* {
+  text-decoration: none !important;
+}
+
+
+/*STORE CSS*/
+
+#productImg{
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.slider {
+  height: 5px;
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+}
+.slider .diffrence {
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+  background: #8f9394;
+}
+.range-input {
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: #8f9394;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #8f9394;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+/*---*/
+
+
+/*AI CHAT CSS*/
+.AIchat {
+  width: 100%;
+  height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+}
+
+.AIchat-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 10px 0px 10px;
+  border: 1px solid gray;
+  margin-bottom: 8px;
+}
+
+div.AIchat-msg{
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  max-width: 60%;
+  clear: both;
+}
+
+div.AIchat-msg *{
+  margin: auto;
+}
+
+div.msg-response{
+  background-color: #4688FF;
+  color: white;
+  float: left;
+}
+
+div.msg-prompt{
+  background-color: #42d32f;
+  color: white;
+  float: right;
+}
+/*---*/
